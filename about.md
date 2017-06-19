@@ -1,30 +1,19 @@
 ---
 layout: page
 title: About
+picture: hiking.jpg
 ---
 
-<p class="message">
-  Hey there! This page is included as an example. Feel free to customize it for your own use upon downloading. Carry on!
-</p>
+I was born and raised in [New Rochelle, NY][newro] and received my Bachelor's degrees in Mathematics and Computer Science from [Manhattan College][mancol] in 2015. I'm currently pursuing my Ph.D. in Mathematics at [Wesleyan University][wes].
 
-In the novel, *The Strange Case of Dr. Jeykll and Mr. Hyde*, Mr. Poole is Dr. Jekyll's virtuous and loyal butler. Similarly, Poole is an upstanding and effective butler that helps you build Jekyll themes. It's made by [@mdo](https://twitter.com/mdo).
+While I no longer play Rugby, I was a member of the [White Plains RFC][wprfc] team and played for a number of years. I believe it's one of the most beautiful sports and think everyone should give it a [try][try] (pun intended)!
 
-There are currently two themes built on Poole:
+I also enjoy programming in my spare time (when it exists). Check out my projects on [GitHub][github].
 
-* [Hyde](http://hyde.getpoole.com)
-* [Lanyon](http://lanyon.getpoole.com)
-
-Learn more and contribute on [GitHub](https://github.com/poole).
-
-## Setup
-
-Some fun facts about the setup of this project include:
-
-* Built for [Jekyll](http://jekyllrb.com)
-* Developed on GitHub and hosted for free on [GitHub Pages](https://pages.github.com)
-* Coded with [Sublime Text 2](http://sublimetext.com), an amazing code editor
-* Designed and developed while listening to music like [Blood Bros Trilogy](https://soundcloud.com/maddecent/sets/blood-bros-series)
-
-Have questions or suggestions? Feel free to [open an issue on GitHub](https://github.com/poole/issues/new) or [ask me on Twitter](https://twitter.com/mdo).
-
-Thanks for reading!
+[github]: https://github.com/apoliveira
+[newro]: http://www.newrochelleny.com/
+[newro]: https://en.wikipedia.org/wiki/New_Rochelle,_New_York
+[try]: https://en.wikipedia.org/wiki/Try
+[mancol]: https://manhattan.edu/
+[wes]: http://wesleyan.edu/
+[wprfc]: http://www.whiteplainsrugby.com/

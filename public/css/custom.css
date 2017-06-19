@@ -1,0 +1,26 @@
+.sidebar {
+  text-align: center;
+}
+
+.sidebar-about {
+  margin-bottom: 0rem;
+}
+
+.sidebar-nav {
+  margin-bottom: 0rem;
+}
+
+.sidebar-about-image {
+  margin: 0 auto;
+  padding-bottom: 1em;
+  max-width: 12rem;
+  max-height: 40vh;
+}
+
+.rounded {
+  border-radius: 50%;
+}
+
+.page-title {
+  text-align: center;
+}

@@ -1,9 +1,22 @@
+{% if page.redirect != null %}
+<!DOCTYPE html>
+<html lang="en-US">
+  <meta charset="utf-8">
+  <title>Redirecting&hellip;</title>
+  <link rel="canonical" href="{{ page.redirect.to }}">
+  <meta http-equiv="refresh" content="0; url={{ page.redirect }}">
+  <meta name="robots" content="noindex">
+  <h1>Redirecting…</h1>
+  <a href="{{ page.redirect }}">Click here if you are not redirected.</a>
+  <script>location="{{ page.redirect }}"</script>
+</html>
+{% else %}
 <!DOCTYPE html>
 <html lang="en-us">
 
   {% include head.html %}
 
-  <body>
+  <body class="theme-base-08">
 
     {% include sidebar.html %}
 
@@ -13,3 +26,4 @@
 
   </body>
 </html>
+{% endif %}
