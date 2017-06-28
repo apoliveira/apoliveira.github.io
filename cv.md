@@ -1,6 +1,7 @@
 ---
 layout: page
 title: CV
+newtab: true
 redirect: "/AndrePOliveiraCV.pdf"
 ---
 
