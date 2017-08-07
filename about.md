@@ -3,7 +3,7 @@ layout: page
 title: About
 picture: hiking.jpg
 ---
-A
+
 I was born and raised in [New Rochelle, NY][newro] and received my Bachelor's degrees in Mathematics and Computer Science from [Manhattan College][mancol] in 2015. I'm currently pursuing my Ph.D. in Mathematics at [Wesleyan University][wes] under the supervision of [Felipe Ramirez][felipe]. If you're interested in the program or have any questions, send me an email ( {{ site.author.email }} ).
 
 While I no longer play Rugby, I was a member of the [White Plains RFC][wprfc] team and played for a number of years. I believe it's one of the most beautiful sports and think everyone should give it a [try][try] (pun intended)!
