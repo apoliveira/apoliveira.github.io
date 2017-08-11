@@ -6,13 +6,13 @@ highlighter:      rouge
 permalink:        pretty
 
 # Setup
-title:            Andre P. Oliveira
+title:            "Andre P. Oliveira"
 tagline:          'An Adventure in Mathematics'
 description:      'I am currently in my third year of graduate work at Wesleyan University, working under the supervision of <a href="http://framirez.web.wesleyan.edu">Felipe A. Ramirez</a>.'
-url:              http://andrepoliveira.com
-baseurl:          /
+url:              "http://andrepoliveira.com/"
+baseurl:          ""
 
-blogbaseurl:      /blog/
+blogbaseurl:      "/blog/"
 
 google_analytics: 'UA-56467618-1'
 
