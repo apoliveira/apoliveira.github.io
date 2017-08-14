@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Teaching
-picture: teaching.jpg
+image: teaching.jpg
 ---
 
 ### Courses taught

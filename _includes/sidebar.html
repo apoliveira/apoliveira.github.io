@@ -2,9 +2,9 @@
   <div class="container sidebar-sticky">
     <div class="sidebar-about">
       <h1>
-        <a href="{{ site.baseurl }}">
-          {% if page.picture != null %}
-            <img class="sidebar-about-image {% if page.roundpicture %}rounded{% endif %}" src="/public/images/{{ page.picture }}">
+        <a href="{{ site.baseurl | default: '/' }}">
+          {% if page.image != null %}
+            <img class="sidebar-about-image {% if page.roundpicture %}rounded{% endif %}" src="/public/images/{{ page.image }}">
           {% endif %}
           {{ site.title }}
         </a>
