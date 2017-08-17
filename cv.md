@@ -5,4 +5,4 @@ newtab: true
 redirect: "/AndrePOliveiraCV.pdf"
 ---
 
-Do I even need an about page??
+You will be redirected shortly.

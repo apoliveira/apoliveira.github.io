@@ -5,6 +5,7 @@ image: teaching.jpg
 ---
 
 ### Courses taught
+- Fall 2017: Introductory Calculus I
 - Spring 2017: Introductory Calculus II
 
 ### Graduate Student Teaching Assistant duties
