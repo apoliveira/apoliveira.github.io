@@ -19,7 +19,7 @@ I'm currently reading/researching **Ergodic Theory and Dynamical Systems**, and 
 
 ### Research Experience
 - During the summer of 2017 I participated in the [Polygonal Billiards Research Cluster][poly research] at Tufts University. This work is still ongoing.
-- During the summer of 2014, I participated in the [*Jasper Summer Fellow's* program][fellow]. I analyzed their Women’s Soccer team, the Jaspers, from a Network Theory perspective. We found strengths and weaknesses among the players using standard measures from Network Theory, and also quantified the similarity between the Jaspers and the 2010 Men’s World Cup Top 16 teams. This work lead to the following publication:
+- During the summer of 2014, I participated in the [*Jasper Summer Fellow's* program][fellow]. I analyzed their Women’s Soccer team, the Jaspers, from a Network Theory perspective. This work lead to the following publication:
   - (with H. Tyler) [*Measurement and comparison of passing networks in collegiate soccer.*][paper] Minnesota Journal of Undergraduate Mathematics, [S.l.], v. 1, n. 1, Dec. 2015.
 
 [paper]: https://mjum.math.umn.edu/index.php/mjum/article/view/005
