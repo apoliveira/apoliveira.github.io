@@ -5,14 +5,27 @@ image: teaching.jpg
 ---
 
 ### Courses taught
-- Fall 2017: Introductory Calculus I
-- Spring 2017: Introductory Calculus II
+<ul>
+{% for teaching in site.data.teaching %}
+  <li>
+    {{teaching.title}}, {{teaching.date}}
+  </li>
+{% endfor %}
+</ul>
 
 ### Graduate Student Teaching Assistant duties
-- Discrete Structures, Fall 2016,
-- Math Workshop, Spring 2016,
-  - I helped students understand lecture notes and homework assignments for varying math classes including: Abstract Algebra, Linear Algebra, Multivariable Calculus, and Probability.
-- Introduction to Programming, Fall 2015.
+<ul>
+{% for ta in site.data.taduties %}
+  <li>
+    {{ta.title}}, {{ta.date}}
+    {% if ta.extra %}
+      <ul>
+        <li>{{ ta.extra }}</li>
+      </ul>
+    {% endif %}
+  </li>
+{% endfor %}
+</ul>
 
 ### Some Useful Links
 
