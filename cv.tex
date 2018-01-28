@@ -16,42 +16,15 @@
 \moderncvstyle{banking}
 \moderncvcolor{purple}
 
- $if(linestretch)$
- \usepackage{setspace}
- \setstretch{$linestretch$}
- $endif$
- $if(mainfont)$
- \setmainfont[$for(mainfontoptions)$$mainfontoptions$$sep$,$endfor$]{$mainfont$}
- $else$
- %\setmainfont{Liberation Serif}[]
- $endif$
- $if(sansfont)$
-     \setsansfont[$for(sansfontoptions)$$sansfontoptions$$sep$,$endfor$]{$sansfont$}
- $endif$
- $if(monofont)$
-     \setmonofont[Mapping=tex-ansi$if(monofontoptions)$,$for(monofontoptions)$$monofontoptions$$sep$ ,$endfor$$endif$]{$monofont$}
- $endif$
-$if(mathfont)$
-     \setmathfont(Digits,Latin,Greek)[$for(mathfontoptions)$$mathfontoptions$$sep$,$endfor$]{$mathfont$}
- $endif$
- % use microtype if available
+   %\setmainfont{Liberation Serif}[]
+    % use microtype if available
  \IfFileExists{microtype.sty}{%
  \usepackage{microtype}
  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
  }{}
- $if(geometry)$
- \usepackage[$for(geometry)$$geometry$$sep$,$endfor$]{geometry}
- $endif$
-
- $if(links-as-notes)$
- % Make links footnotes instead of hotlinks:
- \renewcommand{\href}[2]{#2\footnote{\url{#1}}}
- $endif$
-
- $for(header-includes)$
- $header-includes$
- $endfor$
-
+ 
+ 
+ 
 % adjust the page margins
 \usepackage[scale=0.75]{geometry}
 % if you want to change the width of the column with the dates
@@ -79,7 +52,7 @@ $if(mathfont)$
   \begin{mycvlist}
     \item[#2] #3
     \end{mycvlist}
-    \addvspace{#1}\end{mycvlist}}
+    \addvspace{#1}}
 
 \newlist{mycvlist}{description}{3}
 \setlist[mycvlist]{labelwidth=\hintscolumnwidth,labelsep=\separatorcolumnwidth,leftmargin=!,align=right,font=\normalfont}
@@ -87,25 +60,19 @@ $if(mathfont)$
 %% ========================================================================
 %% personal data
 %% ========================================================================
-\name{$firstname$}{$lastname$}
+\name{}{}
 
-$if(title)$
-\title{$title$}
-$endif$
 
 % optional, remove / comment the line if not wanted;
 % the "postcode city" and "country" arguments can be omitted or provided empty
-$if(address)$
-\address{$if(address.street)$$address.street$$endif$}{$address.city$}{$address.country$}
-$endif$
 
 % these are optional and can be commented out
-%\phone[mobile]{$phone$}
-%\email{$email$}
-%\homepage{$homepage$}
-%\social[linkedin]{$linkedin$}
-%\social[twitter]{$twitter$}
-%\social[github]{$github$}
+%\phone[mobile]{}
+%\email{}
+%\homepage{}
+%\social[linkedin]{}
+%\social[twitter]{}
+%\social[github]{}
 %\extrainfo{additional information}
 
 
@@ -115,29 +82,21 @@ $endif$
 \begin{document}
 \makecvtitle
 
-$for(include-before)$
-$include-before$
-$endfor$
 
-$if(summary)$
-\section{Summary}
-$summary$
-$endif$
 
 \section{Teaching}
- $for(teaching)$
- \cvitem{}{$teaching.date$}{$teaching.description$}
- $endfor$
-
+  \cvitem{}{Fall 2017}{}
+  \cvitem{}{Spring 2017}{}
+ 
 \section{Research Experience}
- $for(research_experience)$
- \cvitem{}{$research_experience.description$ $sep$, $research_experience.extra$}
- $endfor$
+  \cvitem{}{During the summer of 2017 I participated in the}
+  \cvitem{}{During the summer of 2014, I participated in the Jaspers, from a Network Theory perspective. This work lead to the following publication }
 
- \section{Conferences}
- $for(conferences)$
-\cventry{$conferences.date$}{$conferences.name$}{$conferences.location$}
-$endfor$
+\section{Conferences}
+ \cvitem{June 2017}{Graduate Student Conference in Algebra, Geometry, and Topology, Temple University}
+\cvitem{May 2017}{Upstate New York Number Theory Conference, Binghamton University}
+\cvitem{January 2017}{Joint Mathematics Meetings, Atlanta, GA}
+\cvitem{January 2015}{Joint Mathematics Meetings, San Antonio, TX}
 
 
 \end{document}
