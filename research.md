@@ -3,7 +3,7 @@ layout: page
 title: Research
 ---
 
-I'm currently reading/researching Ergodic Theory and Dynamical Systems, and their connections to Number Theory.
+I study homegeneous dynamics and its applications to Diophantine approximations. In particular, In particular, I'm interested in p-adic analogues of Diophantine approximations.
 
 ### Talks
 <ul>
