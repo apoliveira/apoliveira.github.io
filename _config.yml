@@ -8,7 +8,8 @@ permalink:        pretty
 # Setup
 title:            "Andre P. Oliveira"
 tagline:          'An Adventure in Mathematics'
-description:      'I am currently in my third year of graduate work at Wesleyan University, working under the supervision of <a href="http://framirez.web.wesleyan.edu">Felipe A. Ramirez</a>.'
+description:      'I am a Ph. D. candidate in Mathematics at Wesleyan University, working under the supervision of <a href="http://framirez.web.wesleyan.edu">Felipe A. Ramirez</a>.'
+research:         "I study homegeneous dynamics and its applications to Diophantine approximations. In particular, I'm interested in $p$-adic analogues of Diophantine approximation results."
 url:              "http://andrepoliveira.com/"
 baseurl:          ""
 

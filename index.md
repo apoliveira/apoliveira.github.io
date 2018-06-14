@@ -5,6 +5,7 @@ image: hiking.jpg
 ---
 
 <p>{{ site.description }}</p>
+<p>{{ site.research }}
 
 <hr />
 
@@ -14,7 +15,7 @@ image: hiking.jpg
 
 <div class="container">
   <div class="posts">
-    {% for post in site.posts limit : 3 %}
+    {% for post in site.posts limit : 5 %}
     <div class="post">
       <h4 class="post-title">
         <a href="{{ post.url }}">
@@ -22,8 +23,8 @@ image: hiking.jpg
         </a>
       </h4>
       <span class="post-date">{{ post.date | date_to_string }}</span>
-      {% if post.snippet != null %}
-        {{ post.snippet }}
+      {% if post.excerpt != null %}
+        {{ post.excerpt | strip_html | truncatewords:75 }}
       {% endif %}
     </div>
     {% endfor %}

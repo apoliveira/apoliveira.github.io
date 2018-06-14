@@ -4,7 +4,7 @@ title: Teaching
 image: teaching.jpg
 ---
 
-I share [Federico Ardila-Mantilla's](http://math.sfsu.edu/federico/) axioms:
+I firmly believe in [Federico Ardila-Mantilla's](http://math.sfsu.edu/federico/) axioms:
 
 - Axiom 1. Mathematical talent is distributed equally among different groups, irrespective of geographic, demographic, and economic boundaries.
 

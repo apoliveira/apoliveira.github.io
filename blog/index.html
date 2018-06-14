@@ -14,8 +14,8 @@ title: Home
 
     <span class="post-date">{{ post.date | date_to_string }}</span>
 
-    {% if post.snippet != null %}
-      {{ post.snippet }}
+    {% if post.excerpt != null %}
+      {{ post.excerpt | strip_html | truncatewords:75 }}
     {% endif %}
   </div>
   {% endfor %}
