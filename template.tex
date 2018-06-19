@@ -54,12 +54,13 @@ $for(papers)$
     $endif$
     \textit{$papers.title$},
     $if(papers.preprint)$
-      prepint % (<a href="{{paper.link}}">preprint</a>)
-    $endif$
+      (preprint)
+    $else$
     $if(papers.journal)$
-      $papers.journal$%<a href="{{paper.link}}">{{paper.journal}}</a>
+      $papers.journal$
     $else$
       (in preparation)
+    $endif$
     $endif$
     
 $endfor$
