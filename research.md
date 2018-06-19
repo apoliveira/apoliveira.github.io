@@ -5,15 +5,20 @@ title: Research
 
 {{ site.research }}
 
-### External Research Experience
+### Publications
 <ul>
-{% for exp in site.data.research_experience %}
+{% for paper in site.data.papers %}
   <li>
-    {{exp.description | markdownify | remove: '<p>' | remove: '</p>'}}
-    {% if exp.extra %}
-      <ul>
-        <li>{{ exp.extra | markdownify | remove: '<p>' | remove: '</p>'}}</li>
-      </ul>
+    {% if paper.authors %}
+      (joint w. {{paper.authors}})
+    {% endif %}
+    <i>{{paper.title}}</i>,
+    {% if paper.preprint %}
+      (<a href="{{paper.link}}">preprint</a>)
+    {% elsif paper.journal %}
+      <a href="{{paper.link}}">{{paper.journal}}</a>
+    {% else %}
+      (in preparation)
     {% endif %}
   </li>
 {% endfor %}
