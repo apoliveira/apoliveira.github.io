@@ -33,7 +33,7 @@ Let $W_{k,\alpha} := U_k \cap V_\alpha$, so that $W := \set{ W_{k,\alpha} }_{\N 
 
 We will count the set $W := \setofall W_{k,\alpha} \suchthat m(W_{k,\alpha}) > 0 \setend$ in two ways and get two different answers.
 
-First, fix $k$ and consider only the sets $W_{k,\alpha$} \ne \emptyset$; that is, the sets in the refinement that intersect $U_k$.
+First, fix $k$ and consider only the sets $W_{k,\alpha} \ne \emptyset$; that is, the sets in the refinement that intersect $U_k$.
 Consider the set $X_n^k = \setofall W_{k, \alpha} \in W \suchthat m(W_{k,\alpha}) \ge 2^{-n} \setend$. Since $U_k$ has finite measure, the set $X_n^k$ is finite for each $n$.
 It then follows that there are only countably many sets that intersect $U_k$ with positive measure.
 Further, since there are countably many $U_k$ it follows that $W$ is countable.
