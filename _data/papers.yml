@@ -1,9 +1,16 @@
 - title: "How to hear the shape of a billiard table"
-  authors: "A. Calderon, S. Coles, D. Davis, and J. Lanier"
+  authors: 
+    - "[A. Calderon](https://aacalderon.com/)"
+    - S. Coles
+    - "[D. Davis](https://www.swarthmore.edu/NatSci/ddavis3/)"
+    - "[J. Lanier](http://people.math.gatech.edu/~jlanier8/)"
   preprint: true
   link: "/papers/bounce.pdf"
+  extra: "This work began at a [research cluster](https://sites.tufts.edu/billiardscluster/) on polygonal billiards, organized in summer 2017 by [Moon Duchin](http://mduchin.math.tufts.edu/)."
 
 - title: "Measurement and comparison of passing networks in collegiate soccer"
-  authors: H. Tyler
+  authors: 
+    - "[H. Tyler](https://manhattan.edu/campus-directory/helene.tyler)"
   journal: "Minnesota Journal of Undergraduate Mathematics, [S.l.], v. 1, n. 1, Dec. 2015."
   link: "https://mjum.math.umn.edu/index.php/mjum/article/view/005"
+  extra: "This work began during the 2014 [Jasper Summer Fellow’s program](https://inside.manhattan.edu/academic-resources/research/student-opportunities/summer-research/jasper-summer-research-scholars.php)."

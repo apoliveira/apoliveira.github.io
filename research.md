@@ -10,15 +10,20 @@ title: Research
 {% for paper in site.data.papers %}
   <li>
     {% if paper.authors %}
-      (joint w. {{paper.authors}})
+      (joint w. {{ paper.authors | array_to_sentence_string | markdownify | remove: '<p>' | remove: '</p>' }})
     {% endif %}
     <i>{{paper.title}}</i>,
     {% if paper.preprint %}
       (<a href="{{paper.link}}">preprint</a>)
     {% elsif paper.journal %}
-      <a href="{{paper.link}}">{{paper.journal}}</a>
+      <a href="{{paper.link | markdownify}}">{{paper.journal}}</a>
     {% else %}
       (in preparation)
+    {% endif %}
+    {% if paper.extra %}
+    <ul>
+      <li>{{paper.extra | markdownify}}</li>
+    </ul>
     {% endif %}
   </li>
 {% endfor %}
@@ -29,6 +34,11 @@ title: Research
 {% for talk in site.data.talks %}
   <li>
     <i>{{talk.title}}</i>, {{talk.location}}, {{talk.date}}.
+    {% if talk.notes %}
+      <ul>
+        <li>{{talk.notes}}</li>
+      </ul>
+    {% endif %}
   </li>
 {% endfor %}
 </ul>
