@@ -1,33 +1,33 @@
 <div class="sidebar">
-  <div class="container sidebar-sticky">
-    <div class="sidebar-about">
-      <h1>
-        <a href="{{ site.baseurl | default: '/' }}">
-          {% if page.image != null %}
-            <img class="sidebar-about-image {% if page.roundpicture %}rounded{% endif %}" src="/public/images/{{ page.image }}">
-          {% endif %}
-          {{ site.title }}
-        </a>
-      </h1>
-    </div>
-    <nav class="sidebar-nav">
-
-      {% comment %}
-        The code below dynamically generates a sidebar nav of pages with
-        `layout: page` in the front-matter. See readme for usage.
-      {% endcomment %}
-
-      {% assign pages_list = site.pages | sort:"title" %}
-      {% for node in pages_list %}
-        {% if node.title != null and node.nav != false %}
-          {% if node.layout == "page" %}
-            <a class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}" href="{{ node.url }}" {% if node.newtab != null %} target="_blank" {% endif %} >{{ node.title }}</a>
-          {% endif %}
-        {% endif %}
-      {% endfor %}
-
-    </nav>
-
-    <p class="sidebar-copyright">&copy; {{ site.time | date: '%Y' }}. All rights reserved.</p>
+  <div class="sidebar-about">
+    <a href="{{ site.baseurl | default: '/' }}">
+      {% if page.image != null %}
+        <img class="sidebar-about-image {% if page.roundpicture %}rounded{% endif %}" src="/public/images/{{ page.image }}">
+      {% endif %}
+    </a>
   </div>
+  <h1 class="sidebar-title">
+      <a href="{{ site.baseurl | default: '/' }}">
+        {{ site.title }}
+      </a>
+  </h1>
+  <nav class="sidebar-nav">
+
+    {% comment %}
+      The code below dynamically generates a sidebar nav of pages with
+      `layout: page` in the front-matter. See readme for usage.
+    {% endcomment %}
+
+    {% assign pages_list = site.pages | sort:"title" %}
+    {% for node in pages_list %}
+      {% if node.title != null and node.nav != false %}
+        {% if node.layout == "page" %}
+          <a class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}" href="{{ node.url }}" {% if node.newtab != null %} target="_blank" {% endif %} >{{ node.title }}</a>
+        {% endif %}
+      {% endif %}
+    {% endfor %}
+
+  </nav>
+  
+  <p class="sidebar-copyright">&copy; {{ site.time | date: '%Y' }}. All rights reserved.</p>
 </div>
