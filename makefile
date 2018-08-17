@@ -1,4 +1,4 @@
-all: pdf
+all: pdf tidy
 	
 push: pdf 
 	rm -f AndrePOliveiraCV.tex
@@ -13,6 +13,10 @@ AndrePOliveiraCV.pdf: data.yml prepyaml.js template.tex
 
 data.yml:
 	node prepyaml.js
+
+tidy:
+	rm -f AndrePOliveiraCV.tex
+	rm -f data.yml
 
 clean:
 	rm -f AndrePOliveiraCV.pdf
