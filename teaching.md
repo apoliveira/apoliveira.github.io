@@ -16,7 +16,8 @@ I firmly believe in [Federico Ardila-Mantilla's](http://math.sfsu.edu/federico/)
 
 ---
 
-### Courses taught
+### Courses Taught
+
 <ul>
 {% for teaching in site.data.teaching %}
   <li>
@@ -25,7 +26,7 @@ I firmly believe in [Federico Ardila-Mantilla's](http://math.sfsu.edu/federico/)
 {% endfor %}
 </ul>
 
-### Graduate Student Teaching Assistant duties
+### Graduate Student Teaching Assistant Duties
 <ul>
 {% for ta in site.data.taduties %}
   <li>
