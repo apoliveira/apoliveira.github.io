@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Contact
-image: bike.jpg
+image: bike2.jpg
 ---
 
 | Address | Department of Mathematics and Computer Science <br />Wesleyan University <br />Science Tower 655 <br />265 Church Street <br />Middletown, CT 06459 |
