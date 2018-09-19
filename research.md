@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Research
+image: board.jpg
 ---
 
 {{ site.research }}
