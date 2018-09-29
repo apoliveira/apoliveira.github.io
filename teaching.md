@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Teaching
-image: teaching.jpg
+image: talking_with_students.jpg
 ---
 
 I firmly believe in [Federico Ardila-Mantilla's](http://math.sfsu.edu/federico/) axioms:
