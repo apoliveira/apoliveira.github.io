@@ -1,3 +1,7 @@
+body {
+  font-family: "PT Sans", Helvetica, Arial, sans-serif;;
+}
+
 .sidebar {  
   text-align: center;
   height: 100vh;
@@ -10,6 +14,10 @@
 
 .sidebar-title {
   bottom: 0;
+}
+
+h1.sidebar-title {
+  font-size: 1.5rem;
 }
 
 .sidebar-nav {
@@ -34,4 +42,8 @@
 
 .page-title {
   text-align: center;
+}
+
+.post-title {
+  font-size: 1.5rem;
 }

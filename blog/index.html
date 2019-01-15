@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Home
+image: fountain_pen.jpg
 ---
 
 <div class="posts">
@@ -15,7 +16,7 @@ title: Home
     <span class="post-date">{{ post.date | date_to_string }}</span>
 
     {% if post.excerpt != null %}
-      {{ post.excerpt | strip_html | truncatewords:75 }}
+      <p>{{ post.excerpt | strip_html | truncatewords:75 }}</p>
     {% endif %}
   </div>
   {% endfor %}
