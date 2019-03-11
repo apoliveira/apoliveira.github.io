@@ -1,7 +1,4 @@
 all: pdf tidy
-	
-push: pdf 
-	rm -f AndrePOliveiraCV.tex
 
 pdf: AndrePOliveiraCV.pdf
 
