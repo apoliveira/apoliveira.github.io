@@ -69,7 +69,7 @@ Another great resource for understanding different topics is [Khan Academy](http
 If instead you prefer perusing notes that work you through examples give [Paul's Online Math Notes](http://tutorial.math.lamar.edu/) a look!
 
 
-[noelle]: foo
-[felipe]: bar
-[noelle drp]: foo2 
-[wesleyan drp]: bar2
+[noelle]: https://www.noellesawyer.com/
+[felipe]: http://framirez.faculty.wesleyan.edu/
+[noelle drp]: https://www.noellesawyer.com/desk-1/notes-from-the-directed-reading-program-s-first-semester
+[wesleyan drp]: https://drp.site.wesleyan.edu/
