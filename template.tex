@@ -50,7 +50,10 @@ B.A. in Mathematics, B.A. in Computer Science, Manhattan College, August 2011 --
 
 $for(papers)$
     $if(papers.authors)$
-      (joint w. $papers.authors$)
+      (joint w. $for(papers.authors)$%
+        $papers.authors$$sep$,
+      $endfor$%
+      )
     $endif$
     \textit{$papers.title$},
     $if(papers.preprint)$
