@@ -31,7 +31,15 @@ defaults:
       type: "posts"
     values:
       image: "fountain_pen.jpg"
+  -
+    scope: 
+      path: ""
+      type: "pages"
+    values:
+      image: "portrait.jpg"
 
 plugins:
   - jekyll-seo-tag
   - jekyll-paginate
+
+exclude: ["Gemfile", "package-lock.json", "makefile", "prepyaml.js", "template.tex", "res.cls", "node_modules"]

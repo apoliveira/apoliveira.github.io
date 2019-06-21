@@ -4,18 +4,6 @@ title: Teaching
 image: talking_with_students.jpg
 ---
 
-I firmly believe in [Federico Ardila-Mantilla's](http://math.sfsu.edu/federico/) axioms:
-
-- Axiom 1. Mathematical talent is distributed equally among different groups, irrespective of geographic, demographic, and economic boundaries.
-
-- Axiom 2. Everyone can have joyful, meaningful, and empowering mathematical experiences.
-
-- Axiom 3. Mathematics is a powerful, malleable tool that can be shaped and used differently by various communities to serve their needs.
-
-- Axiom 4. Every student deserves to be treated with dignity and respect.
-
----
-
 ### Courses Taught
 
 <ul>
@@ -41,6 +29,8 @@ I firmly believe in [Federico Ardila-Mantilla's](http://math.sfsu.edu/federico/)
 {% endfor %}
 </ul>
 
+---
+
 ### Mentoring (Directed Reading Program)
 
 In the Fall of 2018 Lisa Kaylor, [Noelle Sawyer][noelle], and myself with [Felipe Ramírez][felipe] as our faculty mentor began the Directed Reading Program (DRP) at Wesleyan University. There will be a post explaining what DRP is and how it started. For the time being, Noelle has a really nice explanation of the program and her first semester as a mentor [here][noelle drp]. Also, the Wesleyan Chapter's DRP website can be found [here][wesleyan drp].
@@ -59,6 +49,8 @@ Below is a list of the readings I have mentored:
   </li>
 {% endfor %}
 </ul>
+
+---
 
 ### Some Useful Links
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: What is a "Directed Reading Program"?
+title: "What is a 'Directed Reading Program'?"
 tags: [drp, teaching]
 ---
 
