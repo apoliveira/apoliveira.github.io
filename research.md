@@ -17,7 +17,7 @@ image: board.jpg
     {% if paper.preprint %}
       (<a href="{{paper.link}}">preprint</a>)
     {% elsif paper.journal %}
-      <a href="{{paper.link | markdownify}}">{{paper.journal}}</a>
+      <a href="{{paper.link}}">{{paper.journal}}</a>
     {% else %}
       (in preparation)
     {% endif %}
