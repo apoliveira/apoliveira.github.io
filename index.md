@@ -22,6 +22,7 @@ image: portrait.jpg
           {{ post.title }}
         </a>
       </h4>
+      {% include read_time.html content=post.content %}
       <span class="post-date">{{ post.date | date_to_string }}</span>
       {% if post.excerpt != null %}
         {{ post.excerpt | strip_html | truncatewords:75 }}
