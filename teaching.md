@@ -4,7 +4,7 @@ title: Teaching
 image: talking_with_students.jpg
 ---
 
-### Courses Taught
+### Courses Taught at Wesleyan University
 
 <ul>
 {% for teaching in site.data.teaching %}
