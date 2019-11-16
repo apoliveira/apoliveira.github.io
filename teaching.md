@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Teaching
-image: talking_with_students.jpg
+image: /public/images/talking_with_students.jpg
 ---
 
 ### Courses Taught at Wesleyan University

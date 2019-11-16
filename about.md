@@ -1,7 +1,7 @@
 ---
 layout: page
 title: About
-image: team_with_noelle.jpg
+image: /public/images/team_with_noelle.jpg
 ---
 
 I was born and raised in [New Rochelle, NY][newro] and received my Bachelor's degrees in Mathematics and Computer Science from [Manhattan College][mancol] in 2015. I'm currently pursuing my Ph.D. in Mathematics at [Wesleyan University][wes] under the supervision of [Felipe Ramírez][felipe]. If you're interested in the program or have any questions, send me an email ( {{ site.author.email }} ).

@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Home
-image: portrait.jpg
+image: /public/images/portrait.jpg
 ---
 
 <p>{{ site.description }}</p>
