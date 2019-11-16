@@ -2,7 +2,11 @@
   <div class="sidebar-about">
     <a href="{{ site.baseurl | default: '/' }}">
       {% if page.image != null %}
-        <img class="sidebar-about-image" src="/public/images/{{ page.image }}">
+        {% if page.image contains "/public/images/" %}
+          <img class="sidebar-about-image" src="{{ page.image }}">
+        {% else %}
+          <img class="sidebar-about-image" src="/public/images/{{ page.image }}">
+        {% endif %}
       {% endif %}
     </a>
   </div>

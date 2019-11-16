@@ -30,13 +30,13 @@ defaults:
       path: ""
       type: "posts"
     values:
-      image: "fountain_pen.jpg"
+      image: "/public/images/fountain_pen.jpg"
   -
     scope: 
       path: ""
       type: "pages"
     values:
-      image: "portrait.jpg"
+      image: "/public/images/portrait.jpg"
 
 plugins:
   - jekyll-seo-tag
