@@ -4,7 +4,7 @@ title: "What is a 'Directed Reading Program'?"
 tags: [drp, teaching]
 ---
 
-This past year I had the pleasure and privilege of participating in two amazing [Directed Reading Programs](drp) (DRPs). I plan to write a few more posts on the DRP we have set up at Wesleyan as well as some of the specific DRPs I took part in.
+This past year I had the pleasure and privilege of participating in two amazing [Directed Reading Programs][drp] (DRPs). I plan to write a few more posts on the DRP we have set up at Wesleyan as well as some of the specific DRPs I took part in.
 
 As a bit of history, [Noelle Sawyer][noelle], Lisa Kaylor, [Freda li][freda], and I began our local chapter of the Directed Reading Program network in Fall 2019. More information about the chapter can be found [on our webste][wes drp]. In general terms, the DRP program aims to pair a graduate and undergraduate student for a semester of mathematics and mentoring. More specifically, we're hoping to cultivate an environment where students can gain confidence and ownership in mathematics as well as showing them that there is far more to the world of mathematics than what one typically comes across in courses.
 
