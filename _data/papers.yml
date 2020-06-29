@@ -1,4 +1,6 @@
-- title: "Diophantine Approximations Across Completions"
+- title: "Khintchine's Theorem with rationals coming from neighborhoods in different places"
+  preprint: true
+  link: "https://arxiv.org/abs/2006.14764"
 - title: "How to hear the shape of a billiard table"
   authors: 
     - "[A. Calderon](https://aacalderon.com/)"
@@ -6,7 +8,7 @@
     - "[D. Davis](https://www.swarthmore.edu/NatSci/ddavis3/)"
     - "[J. Lanier](http://people.math.gatech.edu/~jlanier8/)"
   preprint: true
-  link: "/papers/bounce.pdf"
+  link: "https://arxiv.org/abs/1806.09644"
   extra: "This work began at a [research cluster](https://sites.tufts.edu/billiardscluster/) on polygonal billiards, organized in summer 2017 by [Moon Duchin](http://mduchin.math.tufts.edu/)."
 
 - title: "Measurement and comparison of passing networks in collegiate soccer"
