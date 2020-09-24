@@ -5,7 +5,7 @@ tags: [teaching,pedagogy]
 ---
 
 I'm very excited to be teaching the Math department's Pedagogy course this year!
-I took the Pedagogy course during my first year and since then have been an [instructor four times][teaching] and have grown as both an instructor and student.
+I took the Pedagogy course during my first year. Since then I have put that knowledge to good use as an [instructor four times][teaching] and have grown as both an instructor and student.
 While I'm still improving and growing as an instructor, I'm looking forward to spending this time explicitly reviewing mathematical pedagogy and discussing it with others.
 
 This year there are 4 incoming math PhDs (a pretty standard size here) and I'm running the class virtually.
