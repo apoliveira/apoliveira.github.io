@@ -14,8 +14,8 @@ image: /public/images/board.jpg
       (joint w. {{ paper.authors | array_to_sentence_string | markdownify | remove: '<p>' | remove: '</p>' }})
     {% endif %}
     <i>{{paper.title}}</i>,
-    {% if paper.preprint %}
-      (<a href="{{paper.link}}">preprint</a>)
+    {% if paper.status %}
+      (<a href="{{paper.link}}">{{paper.status}}</a>)
     {% elsif paper.journal %}
       <a href="{{paper.link}}">{{paper.journal}}</a>
     {% else %}

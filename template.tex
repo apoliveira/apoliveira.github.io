@@ -56,8 +56,8 @@ $for(papers)$
       )
     $endif$
     \textit{$papers.title$},
-    $if(papers.preprint)$
-      (preprint)
+    $if(papers.status)$
+      ($papers.status$)
     $else$
     $if(papers.journal)$
       $papers.journal$

@@ -1,5 +1,5 @@
 - title: "Khintchine's Theorem with rationals coming from neighborhoods in different places"
-  preprint: true
+  status: "submitted"
   link: "https://arxiv.org/abs/2006.14764"
 - title: "How to hear the shape of a billiard table"
   authors: 
@@ -7,7 +7,7 @@
     - S. Coles
     - "[D. Davis](https://www.swarthmore.edu/NatSci/ddavis3/)"
     - "[J. Lanier](http://people.math.gatech.edu/~jlanier8/)"
-  preprint: true
+  status: "preprint"
   link: "https://arxiv.org/abs/1806.09644"
   extra: "This work began at a [research cluster](https://sites.tufts.edu/billiardscluster/) on polygonal billiards, organized in summer 2017 by [Moon Duchin](http://mduchin.math.tufts.edu/)."
 
