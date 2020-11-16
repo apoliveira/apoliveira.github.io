@@ -31,13 +31,33 @@ image: /public/images/board.jpg
 </ul>
 
 ### Talks
+{% assign invited_talks = site.data.talks | where:"invited","true" %}
+{% assign not_invited_talks = site.data.talks | where_exp:"talks","talks.invited != true" %}
+
+#### Invited
+
 <ul>
-{% for talk in site.data.talks %}
+{% for talk in invited_talks %}
   <li>
-    <i>{{talk.title}}</i>, {{talk.location}}, {{talk.date}}.
-    {% if talk.notes %}
+    <i>{{talk.title}}</i>, {{talk.location}}, {{talk.month}} {{talk.year}}.
+    {% if talk.extra %}
       <ul>
-        <li>{{talk.notes}}</li>
+        <li>{{talk.extra | markdownify }}</li>
+      </ul>
+    {% endif %}
+  </li>
+{% endfor %}
+</ul>
+
+#### Contributed
+
+<ul>
+{% for talk in not_invited_talks %}
+  <li>
+    <i>{{talk.title}}</i>, {{talk.location}}, {{talk.month}} {{talk.year}}.
+    {% if talk.extra %}
+      <ul>
+        <li>{{talk.extra | markdownify }}</li>
       </ul>
     {% endif %}
   </li>
