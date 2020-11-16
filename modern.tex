@@ -1,0 +1,297 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2015 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[11pt,letter,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% moderncv themes
+\moderncvstyle[right]{classic}                             % style options are 'casual' (default), 'classic', 'banking', 'oldstyle' and 'fancy'
+\moderncvcolor{burgundy}                               % color options 'black', 'blue' (default), 'burgundy', 'green', 'grey', 'orange', 'purple' and 'red'
+%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+%\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
+
+% adjust the page margins
+\usepackage[scale=0.75]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+% Update http:// to https://
+% makes a https hyperlink
+% usage: \httpslink[optional text]{link}
+\newcommand*{\httpslink}[2][]{% <=======================================
+  \ifthenelse{\equal{#1}{}}%
+    {\href{https://#2}{#2}}%
+    {\href{https://#2}{#1}}}
+
+% adds a social link to one's personal information (optional)
+% usage: \social[<optional type>][<optional url>]{<account name>}
+% where <optional type> should be either "linkedin", "twitter" or "github"
+\RenewDocumentCommand{\social}{O{}O{}m}{% <=============================
+\ifthenelse{\equal{#2}{}}%
+  {%
+    \ifthenelse{\equal{#1}{linkedin}}{\collectionadd[linkedin]{socials}{\protect\httpslink[#3]{www.linkedin.com/in/#3}}}{}% <==========================================
+    \ifthenelse{\equal{#1}{homepage}} {\collectionadd[homepage]{socials} {\protect\httpslink[#3]{#3}}}    {}% <=====================
+    \ifthenelse{\equal{#1}{github}}  {\collectionadd[github]{socials}  {\protect\httpslink[#3]{www.github.com/#3}}}     {}% <=====================
+  }
+  {\collectionadd[#1]{socials}{\protect\httpslink[#3]{#2} } } 
+}
+
+\RenewDocumentCommand{\phone}{O{}m}{% <=============================
+\ifthenelse{\equal{#1}{mobile}}%
+  {%
+    \collectionadd[mobile]{phones}{\href{tel:#2}{#2}}%
+  }
+  {}
+}
+
+  \makeatletter % <=======================================================
+\renewcommand*{\homepage}[1]{\def\@homepage{#1}\def\@homepagetitle{#1}}
+\patchcmd{\makecvhead}{%search
+  \makenewline\homepagesymbol\httplink{\@homepage}}{%replace
+        \ifthenelse{\isundefined{\@homepage}}{}{%
+    \ifthenelse{\equal{\@homepagetitle}{}}% \homepagetitle could be empty
+    {\makenewline\homepagesymbol\httpslink{\@homepage}}%
+    {\makenewline\homepagesymbol\httpslink[\@homepagetitle]{\@homepage}}}%
+  }{
+    %success
+  }{
+    %failure
+  }
+  
+  
+\makeatother
+
+% personal data
+\name{André P.}{Oliveira}
+
+% optional, remove / comment the line if not wanted
+\title{Curriculum Vitae}                               % 
+% optional, remove / comment the line if not wanted; the "postcode city" and "country" arguments can be omitted or provided empty
+\address{265 Church Street}{Middletown, CT}{06459, USA} 
+% optional, remove / comment the line if not wanted; the optional "type" of the phone can be "mobile" (default), "fixed" or "fax"
+\phone[mobile]{1 (914) 469 2649}
+% optional, remove / comment the line if not wanted
+\email{aoliveira@wesleyan.edu}             
+% optional, remove / comment the line if not wanted
+\homepage{andrepoliveira.com}
+% optional, remove / comment the line if not wanted
+\social[github]{apoliveira}
+
+%\extrainfo{additional information}                 % optional, remove / comment the line if not wanted
+
+%\quote{Some quote}                                 % optional, remove / comment the line if not wanted
+
+% bibliography adjustements (only useful if you make citations in your resume, or print a list of publications using BibTeX)
+%   to show numerical labels in the bibliography (default is to show no labels)
+\makeatletter\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}\makeatother
+%   to redefine the bibliography heading string ("Publications")
+%\renewcommand{\refname}{Articles}
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+%\begin{CJK*}{UTF8}{gbsn}                          % to typeset your resume in Chinese using CJK
+%-----       resume       ---------------------------------------------------------
+\makecvtitle
+
+\bigskip
+
+\section{Education}
+
+\cventry{2015 -- \phantom{2020}}{Ph.D. in Mathematics}{Wesleyan University}{Middletown, CT}{}{Advisor: Felipe A. Ramirez.\\Anticipated graduation: May 2021.}  % arguments 3 to 6 can be left empty
+\cventry{2011 -- 2015}{B.A. in Mathematics, B.A. in Computer Science}{Manhattan College}{Riverdale,~NY}{}{}
+
+\section{Research Interests}
+
+\cvitem{}{My research is primarily focused in Metric Number Theory from a Diophantine approximations perspective. I am particularly interested in the connections and interplay between real and \(p\)-adic Diophantine approximation.}
+
+\section{Publications}
+
+
+$for(papers)$
+\cventry
+{
+  $if(papers.journal)$
+    $papers.year$
+  $else$
+    $papers.status$
+  $endif$
+}
+{$papers.title$}
+{%
+$if(papers.authors)$%
+  (joint w. $for(papers.authors)$%
+    $papers.authors$$sep$,%
+  $endfor$%
+  )%
+$endif$%
+}
+{%
+$if(papers.journal)$%
+  $papers.journal$%
+$endif$%
+}
+{\href{$papers.link$}{(link)}}
+{$papers.extra$}
+
+$endfor$
+
+
+\section{Talks}
+
+\subsection{Invited}
+
+$for(talks)$
+$if(talks.invited)$
+  \cventry
+  {
+  $talks.month$ $talks.year$
+  }
+  {$talks.title$}
+  {$talks.location$}
+  {}
+  {}
+  {%
+  $if(talks.extra)$%
+    $talks.extra$%
+  $endif$%
+  }
+$endif$
+$endfor$
+
+
+\subsection{Contributed}
+
+$for(talks)$
+$if(talks.invited)$ %ugh. this is disgusting... There isn't a native negation
+$else$
+  \cventry
+  {
+  $talks.month$ $talks.year$
+  }
+  {$talks.title$}
+  {$talks.location$}
+  {}
+  {}
+  {%
+  $if(talks.extra)$%
+    $talks.extra$%
+  $endif$%
+  }
+$endif$
+$endfor$
+
+\section{Teaching Experience}
+
+\subsection{Instructor, Wesleyan University}
+
+%Not true because of pedagogy...
+%\cvitem{}{Sole instructor during meeting hours with course materials created in conjunction with fellow instructors and faculty mentor for the following:}
+
+$for(teaching)$
+ \cventry{$teaching.date$}{$teaching.title$}{}{}{}{$teaching.extra$}
+$endfor$
+
+\subsection{Graduate Teaching Assistant, Wesleyan University}
+
+$for(taduties)$
+\cventry
+{$taduties.date$}
+{$taduties.title$}
+{}
+{}
+{}
+{$taduties.extra$}
+$endfor$
+
+
+\section{Mentorship}
+
+\subsection{Directed Reading Program}
+
+\cvitem{}{More information available on our website (\httpslink{drp.site.wesleyan.edu}).}
+$for(drps)$
+\cventry
+{$drps.date$}
+{$drps.title$}
+{}
+{}
+{}
+{$drps.extra$}
+$endfor$
+
+
+\section{Service}
+\subsection{At Wesleyan University}
+$for(services)$
+\cventry
+{$services.date$}
+{$services.title$}
+{$services.organization$}
+{$services.location$}
+{}
+{$services.extra$}
+$endfor$
+
+\newpage
+
+\section{Conferences Attended}
+$for(conferences)$
+\cventry
+{$conferences.date$}
+{$conferences.name$}
+{}
+{}
+{}
+{$conferences.location$}
+$endfor$
+
+\section{Computer Skills}
+\cvitem{Programming Languages}{Python, Javascript/NodeJS, HTML5, CSS3}
+\cvitem{Other}{\LaTeX, MarkDown, Linux, git, GitHub}
+
+\newpage
+
+\section{References}
+% Department of Mathematics \& Computer Science \\
+\raggedleft
+\newcommand{\wesaddress}{Department of Mathematics \& Computer Science \\ Wesleyan University \\ Science Tower 655 \\ 265 Church Street \\ Middletown, CT 06459}
+\newcommand{\mailto}[1]{\href{mailto:{#1}}{#1}}
+
+\begin{cvcolumns}
+  \cvcolumn{Dr. David Constantine}{\mailto{dconstantine@wesleyan.edu } \\\\
+  \wesaddress
+  }
+  \cvcolumn{Dr. Moon Duchin}{ \mailto{Moon.Duchin@tufts.edu} \\\\
+  Tufts University \\
+  School of Arts and Sciences \\
+  Department of Mathematics \\
+  503 Boston Avenue \\
+  Bromfield-Pearson \\ 
+  Medford, MA 02155 \\
+  }
+\end{cvcolumns}
+\begin{cvcolumns}
+  \cvcolumn{Dr. Felipe Ram\'{i}rez}{ \mailto{framirez@wesleyan.edu} \\\\
+  \wesaddress
+  }
+  \cvcolumn{Dr. Christopher Rasmussen}{\mailto{crasmussen@wesleyan.edu} \\\\
+  \wesaddress
+  }
+\end{cvcolumns}
+
+\end{document}
+
+
+%% end of file `template.tex'.

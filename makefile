@@ -2,11 +2,11 @@ all: pdf tidy
 
 pdf: AndrePOliveiraCV.pdf
 
-cv.tex: data.yml prepyaml.js template.tex
-	pandoc -o cv.tex --standalone --template=template.tex data.yml
+cv.tex: data.yml prepyaml.js modern.tex
+	pandoc -o cv.tex --standalone --template=modern.tex data.yml
 
-AndrePOliveiraCV.pdf: data.yml prepyaml.js template.tex
-	pandoc -o AndrePOliveiraCV.pdf --standalone --template=template.tex data.yml
+AndrePOliveiraCV.pdf: data.yml prepyaml.js modern.tex
+	pandoc -o AndrePOliveiraCV.pdf --standalone --template=modern.tex data.yml
 
 data.yml:
 	node prepyaml.js

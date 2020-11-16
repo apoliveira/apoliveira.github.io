@@ -1,10 +1,14 @@
+- name: Midwest Dynamical Systems Early Career Conference
+  location: (virtual)
+  date: Nov. 2020
+
 - name: Lattice Point Distribution and Homogeneous Dynamics
   location: ICERM (virtual)
-  date: June 2020
+  date: Jun. 2020
 
 - name: Workshop on Dynamical Systems and Related Topics
   location: Penn State
-  date: September 2019
+  date: Sep. 2019
 
 - name: Midwest Dynamical Systems Early Career Conference
   location: Ohio State University
@@ -12,15 +16,15 @@
 
 - name: Beyond the Binary
   location: University of Hartford
-  date: April 2019
+  date: Apr. 2019
 
 - name: Workshop on Dynamical Systems and Related Topics
   location: University of Maryland
-  date: April 2019
+  date: Apr. 2019
 
 - name: Workshop on Dynamical Systems and Related Topics
   location: Penn State
-  date: September 2018
+  date: Sep. 2018
 
 - name: Houston Summer School on Dynamical Systems
   location: University of Houston
@@ -32,15 +36,19 @@
 
 - name: Upstate New York Number Theory Conference
   location: University of Buffalo
-  date: April 2018
+  date: Apr. 2018
 
 - name: Workshop on Dynamical Systems and Related Topics
   location: University of Maryland
-  date: April 2018
+  date: Apr. 2018
+
+- name: Women in Mathematics in New England September
+  location: Smith College
+  date: Sep. 2017
 
 - name: Graduate Student Conference in Algebra, Geometry, and Topology
   location: Temple University
-  date: June 2017
+  date: Jun. 2017
 
 - name: Upstate New York Number Theory Conference
   location: Binghamton University
@@ -48,8 +56,8 @@
 
 - name: Joint Mathematics Meetings
   location: Atlanta, GA
-  date: January 2017
+  date: Jan. 2017
 
 - name: Joint Mathematics Meetings
   location: San Antonio, TX
-  date: January 2015
+  date: Jan. 2015
