@@ -8,7 +8,7 @@ I was born and raised in [New Rochelle, NY][newro] and received my Bachelor's de
 
 While I no longer play rugby, I was a member of the [White Plains RFC][wprfc] team and played for a number of years. I believe it's one of the most beautiful sports and think everyone should give it a [try][try] (pun intended)!
 
-I also enjoy programming in my spare time (when it exists). Check out my projects on [GitHub][github].
+Outside of math I spend my time cycling, baking sourdough bread, and programming. Check out some of my projects on [GitHub][github].
 
 [felipe]: http://framirez.web.wesleyan.edu
 [github]: https://github.com/apoliveira
