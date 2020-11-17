@@ -10,6 +10,11 @@ image: /public/images/talking_with_students.jpg
 {% for teaching in site.data.teaching %}
   <li>
     {{teaching.title}}, {{teaching.date}}
+    {% if teaching.extra %}
+      <ul>
+        <li>{{ teaching.extra }}</li>
+      </ul>
+    {% endif %}
   </li>
 {% endfor %}
 </ul>
