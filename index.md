@@ -16,18 +16,7 @@ image: /public/images/portrait.jpg
 <div class="container">
   <div class="posts">
     {% for post in site.posts limit : 5 %}
-    <div class="post">
-      <h4 class="post-title">
-        <a href="{{ post.url }}">
-          {{ post.title }}
-        </a>
-      </h4>
-      {% include read_time.html content=post.content %}
-      <span class="post-date">{{ post.date | date_to_string }}</span>
-      {% if post.excerpt != null %}
-        {{ post.excerpt | strip_html | truncatewords:75 }}
-      {% endif %}
-    </div>
+      {% include post.html content=post %}
     {% endfor %}
   </div>
 </div>

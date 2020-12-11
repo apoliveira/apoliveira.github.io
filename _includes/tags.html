@@ -1,0 +1,11 @@
+{% assign tags=include.content.tags %}
+
+{% assign links="" | split: ","%}
+
+{% for tag in tags %}
+  {% capture tagLink %}<a href="{% link tags.md %}#{{tag}}">#{{tag | rstrip}}</a>{% endcapture %}
+  
+  {% assign links=links | push: tagLink %}
+{% endfor %}
+
+<div class="post-tags">{{ links | join: ', ' }}</div>
