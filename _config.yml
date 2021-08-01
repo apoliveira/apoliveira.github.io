@@ -8,8 +8,8 @@ permalink:        pretty
 # Setup
 title:            "Andre P. Oliveira"
 tagline:          'An Adventure in Mathematics'
-description:      'I am a Ph. D. candidate in Mathematics at Wesleyan University, working under the supervision of <a href="http://framirez.web.wesleyan.edu">Felipe A. Ramírez</a>.'
-research:         "My research is primarily focused in Metric Number Theory from a Diophantine approximations perspective. I am particularly interested in the connections and interplay between real and p-adic Diophantine approximation."
+description:      "I am currently a Data Science Intern at Travelers Insurance. Before that, I received my Ph.D. in Mathematics. Currently exploring and enjoying the world of Industry."
+research:         "My academic research is primarily focused in Metric Number Theory from a Diophantine approximations perspective. I am particularly interested in the connections and interplay between real and p-adic Diophantine approximation."
 url:              "https://andrepoliveira.com"
 baseurl:          ""
 
@@ -19,7 +19,7 @@ google_analytics: 'UA-56467618-1'
 
 author:
   name:           'Andre P. Oliveira'
-  email:          'aoliveira (at) wesleyan (dot) edu'
+  email:          "'oliveira.andrepinto' on GMail"
 
 paginate:         5
 paginate_path: "/blog/page:num"

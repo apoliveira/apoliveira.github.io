@@ -4,6 +4,12 @@ title: Teaching
 image: /public/images/talking_with_students.jpg
 ---
 
+As a graduate student I had a number of great opportunities to teach and mentor students.
+Below are the list of courses I've taught and TAed, as well as the Direct Reading Programs I was lucky enough to mentor!
+
+---
+{: style="margin: 0 auto; width:50%;"}
+
 ### Courses Taught at Wesleyan University
 
 <ul>
