@@ -16,6 +16,7 @@ baseurl:          ""
 blogbaseurl:      "/blog/"
 
 google_analytics: 'UA-56467618-1'
+umami_analytics_id: '59b405e7-6119-4f48-9235-4b1fd1860e9e'
 
 author:
   name:           'Andre P. Oliveira'
