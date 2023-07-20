@@ -1,13 +1,1 @@
-<!-- Umami Analytics -->
-
-{{ '59b405e7-6119-4f48-9235-4b1fd1860e9e' }}
-
-{{ site.umami_analytics_id }}
-
-{{ jekyll.environemnt }}
-
-{% if site.umami_analytics_id and jekyll.environment == 'production' %}
-
-<script async defer data-website-id="{{ site.umami_analytics_id }}" src="https://analytics-by-umami.herokuapp.com/main.js"></script>
-
-{% endif %}
+<!-- no analytics for you -->
